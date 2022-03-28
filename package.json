@@ -7,12 +7,14 @@
     "serve": "live-server src",
     "compile:sass": "node-sass style.scss style.css -w",
     "watch": "sass --watch src/scss:src/styles",
-    "start": "run-p serve watch"
+    "start": "run-p serve watch",
+    "publish": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Orazio",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "live-server": "^1.2.1",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
